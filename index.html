@@ -48,6 +48,22 @@
       var defaults = config.$get();
       config.set({
         appName: 'angular-filemanager',
+        defaultLang: 'zh',
+
+        listUrl: 'bridges/php-local/',
+        uploadUrl: 'bridges/php-local/',
+        renameUrl: 'bridges/php-local/',
+        copyUrl: 'bridges/php-local/',
+        moveUrl: 'bridges/php-local/',
+        removeUrl: 'bridges/php-local/',
+        editUrl: 'bridges/php-local/',
+        getContentUrl: 'bridges/php-local/',
+        createFolderUrl: 'bridges/php-local/',
+        downloadFileUrl: 'bridges/php-local/',
+        downloadMultipleUrl: 'bridges/php-local/',
+        compressUrl: 'bridges/php-local/',
+        extractUrl: 'bridges/php-local/',
+        permissionsUrl: 'bridges/php-local/',
         pickCallback: function(item) {
           var msg = 'Picked %s "%s" for external use'
             .replace('%s', item.type)
@@ -56,8 +72,9 @@
         },
 
         allowedActions: angular.extend(defaults.allowedActions, {
-          pickFiles: false,
-          pickFolders: false,
+          extract: false,
+          compress: false,
+          downloadMultiple: false,
         }),
       });
     }]);
@@ -66,14 +83,5 @@
 
 <body class="ng-cloak">
   <angular-filemanager></angular-filemanager>
-
-  <script> 
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-35182652-1', 'auto');
-    ga('send', 'pageview');
-  </script>
 </body>
 </html>
