@@ -27,8 +27,9 @@ This project is under free license. If you want to support the angular-filemanag
 
 ### TODO
   - Drag and drop
-  - Dropbox and Google Drive compatibility
-  - Extend backend bridges (PHP, Java, Python, Node, .Net)
+  - Configure interface to work with safari for apple users
+  - Dropbox, OneDrive(api?) and Google Drive Unity, combine free storage accounts, one interface
+  - Extend backend bridges (PHP, Java, Python, Node, .Net, SSH )
   - Migrate jQuery to native or angular.element
 
 ### Backend API
