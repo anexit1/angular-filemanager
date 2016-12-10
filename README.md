@@ -27,6 +27,7 @@ This project is under free license. If you want to support the angular-filemanag
 
 ### TODO
   - Drag and drop
+  - Right Click Share file with random id (php uniqid)
   - Configure interface to work with safari for apple users
   - Dropbox, OneDrive(api?) and Google Drive Unity, combine free storage accounts, one interface
   - Extend backend bridges (PHP, Java, Python, Node, .Net, SSH )
